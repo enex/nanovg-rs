@@ -22,7 +22,6 @@ use std::fmt;
 use std::ptr;
 use std::str;
 use std::ffi::CString;
-use std::num::ToPrimitive;
 
 use libc::{c_char, c_int, c_void, c_float};
 
