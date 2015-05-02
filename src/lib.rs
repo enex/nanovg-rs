@@ -1,6 +1,5 @@
 #![doc(html_root_url = "https://github.com/KevinKelley/nanovg-rs")]
 
-#![feature(unsafe_destructor)]  // use Option instead
 #![feature(optin_builtin_traits, hash, libc, core, std_misc, slice_patterns)] // Until 1.0, when this feature stablizes
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
@@ -458,7 +457,6 @@ impl fmt::Debug for Ctx {
     }
 }
 
-#[unsafe_destructor]
 impl Drop for Ctx {
     fn drop(&mut self) {
         self.delete_gl3();
