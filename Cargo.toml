@@ -3,6 +3,9 @@ name = "nanovg"
 version = "0.2.0"
 authors = ["Kevin Kelley <kevin@kelleysoft.com>"]
 build = "build.rs"
+license = "MIT"
+description = "binding for the NanoVG vector graphics library"
+repository="https://github.com/KevinKelley/nanovg-rs"
 
 [lib]
 name = "nanovg"
